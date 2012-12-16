@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+begin
+  require "bundler/setup"
+rescue LoadError
+  puts "You must `gem install bundler` and `bundle install` to run rake tasks"
+end
+
+require 'teabag/cli'
+cli = Teabag::Cli.new
+#puts cli.opt_parser unless ARGV[0]
